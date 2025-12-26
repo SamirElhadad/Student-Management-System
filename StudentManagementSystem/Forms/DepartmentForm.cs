@@ -29,7 +29,6 @@ namespace StudentManagementSystem.Forms
             this.StartPosition = FormStartPosition.CenterScreen;
             this.BackColor = Color.FromArgb(240, 240, 240);
 
-            // Left Panel
             Panel leftPanel = new Panel
             {
                 Location = new Point(20, 20),

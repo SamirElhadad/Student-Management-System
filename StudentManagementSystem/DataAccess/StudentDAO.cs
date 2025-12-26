@@ -73,8 +73,6 @@ namespace StudentManagementSystem.DataAccess
                 throw new Exception("Error updating student: " + ex.Message);
             }
         }
-
-        // deleting a student
         public bool DeleteStudent(int studentID)
         {
             try
