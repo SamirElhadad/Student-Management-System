@@ -18,8 +18,17 @@ CREATE TABLE Student (
     FirstName NVARCHAR(50) NOT NULL,
     LastName NVARCHAR(50) NOT NULL,
     DateOfBirth DATE NOT NULL,
-    Email NVARCHAR(100) UNIQUE,
-    Phone NVARCHAR(20),
+    Email NVARCHAR(100) UNIQUE CHECK (Email LIKE '%_@_%._%'),
+    Phone CHAR(11)
+        CHECK (
+            LEN(Phone) = 11 AND
+            (
+                Phone LIKE '010%' OR
+                Phone LIKE '011%' OR
+                Phone LIKE '012%' OR
+                Phone LIKE '015%'
+            )
+        ),
     Address NVARCHAR(255),
     DepartmentID INT,
     EnrollmentDate DATE DEFAULT GETDATE(),
