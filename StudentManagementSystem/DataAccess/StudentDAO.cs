@@ -8,7 +8,6 @@ namespace StudentManagementSystem.DataAccess
 {
     public class StudentDAO
     {
-        // adding new student
         public bool AddStudent(Student student)
         {
             try
@@ -38,8 +37,6 @@ namespace StudentManagementSystem.DataAccess
                 throw new Exception("Error adding student: " + ex.Message);
             }
         }
-
-        // updating existing student
         public bool UpdateStudent(Student student)
         {
             try

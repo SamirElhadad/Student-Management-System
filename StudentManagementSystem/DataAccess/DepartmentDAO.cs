@@ -6,7 +6,6 @@ namespace StudentManagementSystem.DataAccess
 {
     public class DepartmentDAO
     {
-        // Get all departments
         public DataTable GetAllDepartments()
         {
             try
@@ -25,8 +24,6 @@ namespace StudentManagementSystem.DataAccess
                 throw new Exception("Error retrieving departments: " + ex.Message);
             }
         }
-
-        // Add department
         public bool AddDepartment(string departmentName, string departmentCode)
         {
             try

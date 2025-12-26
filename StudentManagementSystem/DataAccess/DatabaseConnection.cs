@@ -6,7 +6,7 @@ namespace StudentManagementSystem.DataAccess
     public class DatabaseConnection
     {
         // Connection String 
-        private static string connectionString = @"Data Source=SAMIR\SQLEXPRESS;Initial Catalog=StudentManagementDB;Integrated Security=True";
+        private static string connectionString = @"Data Source=.;Initial Catalog=StudentManagementDB;Integrated Security=True";
 
         // Connection
         public static SqlConnection GetConnection()
